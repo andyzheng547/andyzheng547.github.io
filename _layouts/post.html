@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="page-content container">
+  {% if page.title %}
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="page-header">{{ page.title }}</span>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="row">
+    <div class="col-xs-12">
+      {{ content }}
+    </div>
+  </div>
+</div>
