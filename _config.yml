@@ -16,7 +16,7 @@
 title: Andy Zheng's Github Pages
 email: andy.zheng249@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "andyzheng547.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://andyzheng547.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  andyzheng547
 linkedin_url: https://www.linkedin.com/in/andyzhengnyc
 
