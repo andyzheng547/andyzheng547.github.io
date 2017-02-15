@@ -1,0 +1,30 @@
+.navbar-default {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0, 1);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+
+/*.navbar-default .navbar-nav > .active{
+   color: #000;
+  background: #d65c14;
+}*/
+.navbar-default .navbar-nav > .active > a {
+  float: none;
+  width: 80%;
+  background: transparent;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover{
+  float: none;
+  width: 80%;
+  background: transparent;
+  border-bottom: 3px solid rgba(50, 50, 50, 0.8);
+  border-radius: 0px;
+  box-shadow: none;
+}
