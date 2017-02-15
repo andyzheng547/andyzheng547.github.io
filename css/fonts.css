@@ -1,0 +1,40 @@
+/*
+ * Font families
+ */
+
+ /*    Sans Serif  */
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/fonts/Comfortaa/Comfortaa_Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Asap';
+  src: url('../assets/fonts/asap/Asap-Regular.otf') format('opentype');
+}
+
+  /*    Serif      */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/monserrat/Montserrat-Regular.otf') format('opentype');
+}
+
+/* Set fonts */
+nav {
+  font-family: 'Comfortaa', sans-serif, serif;
+}
+
+.page-content {
+  font-family: 'Open Sans', serif, sans-serif;
+}
+
+.page-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+  font-family: 'Asap', 'Comfortaa', sans-serif, serif;
+}
