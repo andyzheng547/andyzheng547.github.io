@@ -5,11 +5,9 @@ $("#formspree-form").on("submit", function(e){
     name:         $("#sender-name-input").val(),
     _reply_to:    $("#sender-email-input").val(),
     _subject:     $("#subject-input").val(),
-    message:      $("message-input").val(),
-    _gotcha:      $("gotcha").val()
+    message:      $("#message-input").val(),
+    _gotcha:      $("#gotcha").val()
   };
-
-  console.log("Email Parameters: " + JSON.stringify(emailParams));
 
   $.ajax({
     url:        "https://www.formspree.io/andy.zheng249@gmail.com",
@@ -17,9 +15,11 @@ $("#formspree-form").on("submit", function(e){
     data:       emailParams,
     dataType:   "json",
     success:    function(data){
-      console.log("Success: " + JSON.stringify(data));
+      $("#formspree-form").fadeOut();
+      $("#email-success-dialog").fadeIn();
+    },
+    error:      function(data){
+      $("#email-failure-dialog").fadeIn();
     }
   });
-
-  alert("Thank you for the email!.");
 });
