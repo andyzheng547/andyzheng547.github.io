@@ -3,12 +3,16 @@
     <h3>Email Me</h3>
   </div>
 
-  <div class="row email-form">
-    <form action="https://formspree.io/andy.zheng249@gmail.com" method="post">
-      <input type="text" name="name" placeholder="Your name" class="col-xs-12 email-sender-name">
-      <input type="email" name="_replyto" placeholder="Your email" class="col-xs-12 email-sender-input">
-      <textarea name="message" placeholder="Your message" class="col-xs-12 email-message" ></textarea>
-      <input type="submit" value="Send" class="email-submit-button col-xs-12">
+  <div class="row">
+    <form method="post" action="https://formspree.io/andy.zheng249@gmail.com" id="formspree-form">
+      <input type="text" name="name" placeholder="Your name" class="col-xs-12" id="sender-name-input">
+      <input type="email" name="_replyto" placeholder="Your email" class="col-xs-12" id="sender-email-input">
+      <input type="text" name="_subject" placeholder="Subject" class="col-xs-12" id="subject-input">
+      <textarea name="message" placeholder="Your message" class="col-xs-12" id="message-input"></textarea>
+
+      <input type="text" name="_gotcha" style="display:none" id="gotcha"/>
+      <!-- <input type="hidden" name="_next" value="{{ site.url }}{{ page.url }}"> -->
+      <input type="submit" value="Send" class="col-xs-12" id="send-message">
     </form>
   </div>
 

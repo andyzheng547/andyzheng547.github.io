@@ -4,8 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
+<h1>You have {{ site.posts.size }} Posts</h1>
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse   %}
+
 <ul class="posts-list">
-  {% for post in site.posts %}
+  {% for post in sorted_posts %}
     <li class="posts-list-item">
       <span class="post-datetime-meta">{{ post.date | date: "%D %l:%M%P %Z" }}</span>
       <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
